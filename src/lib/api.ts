@@ -1,7 +1,6 @@
 import { ChatMessage, DeployResponse, FileNode, LoginCredentials, LoginResponse, ProjectSummaryResponse, ProjectRequest, ProjectResponse, ProjectMember, ProjectRole, SignupRequest, AuthResponse } from "./types";
 
-const BASE_URL = import.meta.env.VITE_BASE_URL;
-console.log("Base URL:", BASE_URL);
+const BASE_URL = "http://api.lovable.anuragtech.fyi";
 
 export const getAuthToken = () => localStorage.getItem("auth_token");
 
