@@ -1,5 +1,3 @@
-require('dotenv').config();
-
 import { ChatMessage, DeployResponse, FileNode, LoginCredentials, LoginResponse, ProjectSummaryResponse, ProjectRequest, ProjectResponse, ProjectMember, ProjectRole, SignupRequest, AuthResponse } from "./types";
 
 const BASE_URL = process.env.REACT_APP_BASE_URL;
