@@ -1,6 +1,6 @@
 import { ChatMessage, DeployResponse, FileNode, LoginCredentials, LoginResponse, ProjectSummaryResponse, ProjectRequest, ProjectResponse, ProjectMember, ProjectRole, SignupRequest, AuthResponse } from "./types";
 
-const BASE_URL = process.env.REACT_APP_BASE_URL;
+const BASE_URL = import.meta.env.REACT_APP_BASE_URL;
 console.log("Base URL:", BASE_URL);
 
 export const getAuthToken = () => localStorage.getItem("auth_token");
